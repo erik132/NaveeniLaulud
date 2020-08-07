@@ -1,0 +1,281 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Let the music start</title>
+	<link rel="stylesheet" type="text/css" href="bulma-0.8.0\css\bulma.min.css">
+	
+</head>
+<body>
+	<section class="section">
+	<div class="container">
+
+		<audio id="soundTest">
+		 	<source src="soundTest.mp3" type="audio/mpeg">
+		 	Your browser does not support the audio element.
+		</audio>
+		<!-- General sounds -->
+		<audio id="morningWakeup">
+		 	<source src="morningWakeup.mp3" type="audio/mpeg">
+		 	Your browser does not support the audio element.
+		</audio>
+		<audio id="morningWakeupLong">
+		 	<source src="morningWakeupLong.mp3" type="audio/mpeg">
+		 	Your browser does not support the audio element.
+		</audio>
+		<audio id="morningWakeup3">
+		 	<source src="morningWakeup3.mp3" type="audio/mpeg">
+		 	Your browser does not support the audio element.
+		</audio>
+		<audio id="lampAaria1">
+		 	<source src="lampAaria1.mp3" type="audio/mpeg">
+		 	Your browser does not support the audio element.
+		</audio>
+		<audio id="balleSalm">
+		 	<source src="balleSalm.mp3" type="audio/mpeg">
+		 	Your browser does not support the audio element.
+		</audio>
+		<audio id="allahAaria">
+		 	<source src="allahAaria.mp3" type="audio/mpeg">
+		 	Your browser does not support the audio element.
+		</audio>
+		<audio id="tuhiAaria">
+		 	<source src="tuhiAaria.mp3" type="audio/mpeg">
+		 	Your browser does not support the audio element.
+		</audio>
+		<audio id="chalaakiAaria">
+		 	<source src="chalaakiAaria.mp3" type="audio/mpeg">
+		 	Your browser does not support the audio element.
+		</audio>
+
+		<audio id="slowDrums">
+		 	<source src="slowDrums.mp3" type="audio/mpeg">
+		 	Your browser does not support the audio element.
+		</audio>
+		<audio id="partyTunak">
+		 	<source src="partyTunak.mp3" type="audio/mpeg">
+		 	Your browser does not support the audio element.
+		</audio>
+		<audio id="chalaakiParty">
+		 	<source src="chalaakiParty.mp3" type="audio/mpeg">
+		 	Your browser does not support the audio element.
+		</audio>
+		<audio id="tumbaParty">
+		 	<source src="tumbaParty.mp3" type="audio/mpeg">
+		 	Your browser does not support the audio element.
+		</audio>
+		<audio id="shaRaRaParty">
+		 	<source src="shaRaRaParty.mp3" type="audio/mpeg">
+		 	Your browser does not support the audio element.
+		</audio>
+		<audio id="padmavatiParty">
+		 	<source src="padmavatiParty.mp3" type="audio/mpeg">
+		 	Your browser does not support the audio element.
+		</audio>
+
+		<!-- prayers -->
+		<audio id="prayerBeat">
+		 	<source src="prayerBeat.mp3" type="audio/mpeg">
+		 	Your browser does not support the audio element.
+		</audio>
+		<audio id="allahu">
+		 	<source src="allahu.mp3" type="audio/mpeg">
+		 	Your browser does not support the audio element.
+		</audio>
+		<audio id="allahuBeat">
+		 	<source src="allahuBeat.mp3" type="audio/mpeg">
+		 	Your browser does not support the audio element.
+		</audio>
+
+		<!-- Spells -->
+		<audio id="balleInstrumental">
+		 	<source src="balleInstrumental.mp3" type="audio/mpeg">
+		 	Your browser does not support the audio element.
+		</audio>
+		<audio id="illusion2">
+		 	<source src="illusion2.mp3" type="audio/mpeg">
+		 	Your browser does not support the audio element.
+		</audio>
+		<audio id="hullareIllusion">
+		 	<source src="hullareIllusion.mp3" type="audio/mpeg">
+		 	Your browser does not support the audio element.
+		</audio>
+		<audio id="erieSurma">
+		 	<source src="erieSurma.mp3" type="audio/mpeg">
+		 	Your browser does not support the audio element.
+		</audio>
+
+		<audio id="drumAndShot">
+		 	<source src="drumAndShot.mp3" type="audio/mpeg">
+		 	Your browser does not support the audio element.
+		</audio>
+		<audio id="shaRaRaBlast">
+		 	<source src="shaRaRaBlast.mp3" type="audio/mpeg">
+		 	Your browser does not support the audio element.
+		</audio>
+		<audio id="jaggaBlast">
+		 	<source src="jaggaBlast.mp3" type="audio/mpeg">
+		 	Your browser does not support the audio element.
+		</audio>
+		<audio id="surmaSurma">
+		 	<source src="surmaSurma.mp3" type="audio/mpeg">
+		 	Your browser does not support the audio element.
+		</audio>
+		<audio id="basantiBlast">
+		 	<source src="basantiBlast.mp3" type="audio/mpeg">
+		 	Your browser does not support the audio element.
+		</audio>
+
+		<!-- nachidi meri -->
+		<audio id="nachdiMeriLight">
+		 	<source src="nachdiMeriLight.mp3" type="audio/mpeg">
+		 	Your browser does not support the audio element.
+		</audio>
+		<audio id="nachdiMeriHeavy">
+		 	<source src="nachdiMeriHeavy.mp3" type="audio/mpeg">
+		 	Your browser does not support the audio element.
+		</audio>
+		<p class="title is-1">Technical</p>
+		<div class="button is-danger" onclick="stopAll()">Stop All</div>
+		<div class="button is-primary" onclick="playAudio('soundTest')">General soundtest</div>
+
+		<p class="title is-1">General sounds</p>
+		<div class="columns">
+			<div class="column">
+				<div class="has-text-centered button is-warning is-fullwidth" onclick="playAudio('morningWakeup')">Morning wakeup</div>
+			</div>
+			<div class="column">
+				<div class="has-text-centered button is-warning is-fullwidth" onclick="playAudio('morningWakeupLong')">Long Morning wakeup</div>
+			</div>
+			<div class="column">
+				<div class="has-text-centered button is-warning is-fullwidth" onclick="playAudio('morningWakeup3')">Morning wakeup 3</div>
+			</div>
+		</div>
+
+		<div class ="columns">
+			<div class="column">
+				<div class="has-text-centered button is-warning is-fullwidth" onclick="playAudio('lampAaria1')">Heavy aaria 1</div>
+			</div>
+			<div class="column">
+				<div class="has-text-centered button is-warning is-fullwidth" onclick="playAudio('balleSalm')">Balle aaria</div>
+			</div>
+			<div class="column">
+				<div class="has-text-centered button is-warning is-fullwidth" onclick="playAudio('allahAaria')">Allah aaria</div>
+			</div>
+			<div class="column">
+				<div class="has-text-centered button is-warning is-fullwidth" onclick="playAudio('tuhiAaria')">Tuhi aaria</div>
+			</div>
+			<div class="column">
+				<div class="has-text-centered button is-warning is-fullwidth" onclick="playAudio('chalaakiAaria')">Chalaaki aaria</div>
+			</div>
+		</div>
+		<div class ="columns">
+			<div class="column">
+				<div class="has-text-centered button is-warning is-fullwidth" onclick="playAudio('slowDrums')">Slow Drums</div>
+			</div>
+			<div class="column">
+				<div class="has-text-centered button is-warning is-fullwidth" onclick="playAudio('partyTunak')">Party tunak</div>
+			</div>
+			<div class="column">
+				<div class="has-text-centered button is-warning is-fullwidth" onclick="playAudio('chalaakiParty')">Chalaaki Party</div>
+			</div>
+			<div class="column">
+				<div class="has-text-centered button is-warning is-fullwidth" onclick="playAudio('tumbaParty')">Tumba Party</div>
+			</div>
+			<div class="column">
+				<div class="has-text-centered button is-warning is-fullwidth" onclick="playAudio('shaRaRaParty')">Sha Ra Ra Ra Party</div>
+			</div>
+			<div class="column">
+				<div class="has-text-centered button is-warning is-fullwidth" onclick="playAudio('padmavatiParty')">Padmavati Party</div>
+			</div>
+		</div>
+		<p class="subtitle is-3">Prayers</p>
+		<div class="columns">
+			<div class="column">
+				<div class="has-text-centered button is-warning is-fullwidth" onclick="playAudio('prayerBeat')">Allah beat</div>
+			</div>
+			<div class="column">
+				<div class="has-text-centered button is-warning is-fullwidth" onclick="playAudio('allahu')">Allah Huuuuu</div>
+			</div>
+			<div class="column">
+				<div class="has-text-centered button is-warning is-fullwidth" onclick="playAudio('allahuBeat')">Allah Huuuuu Beat</div>
+			</div>
+		</div>
+
+		<p class="title is-1">Spells</p>
+		<p class="title is-3">Minor illusion</p>
+		<div class="columns">
+			<div class="column">
+				<div class="has-text-centered button is-success is-fullwidth" onclick="playAudio('balleInstrumental')">Balle instrumental</div>
+			</div>
+			<div class="column">
+				<div class="has-text-centered button is-success is-fullwidth" onclick="playAudio('illusion2')">Illusion 2</div>
+			</div>
+			<div class="column">
+				<div class="has-text-centered button is-success is-fullwidth" onclick="playAudio('hullareIllusion')">Hullare Illusion</div>
+			</div>
+			<div class="column">
+				<div class="has-text-centered button is-success is-fullwidth" onclick="playAudio('erieSurma')">Eerie Surma</div>
+			</div>
+		</div>
+
+		<p class="title is-3">Earth Tremor</p>
+		<div class="columns">
+			<div class="column">
+				<div class="has-text-centered button is-success is-fullwidth" onclick="playAudio('partyTunak')">Party tunak</div>
+			</div>
+			<div class="column">
+				<div class="has-text-centered button is-success is-fullwidth" onclick="playAudio('chalaakiParty')">Chalaaki Party</div>
+			</div>
+			<div class="column">
+				<div class="has-text-centered button is-success is-fullwidth" onclick="playAudio('tumbaParty')">Tumba Party</div>
+			</div>
+			<div class="column">
+				<div class="has-text-centered button is-success is-fullwidth" onclick="playAudio('shaRaRaParty')">Sha Ra Ra Ra Party</div>
+			</div>
+		</div>
+
+		<p class="title is-3">Thunderwave</p>
+		<div class="columns">
+			<div class="column">
+				<div class="has-text-centered button is-success is-fullwidth" onclick="playAudio('drumAndShot')">Drum and Shot</div>
+			</div>
+			<div class="column">
+				<div class="has-text-centered button is-success is-fullwidth" onclick="playAudio('shaRaRaBlast')">Sha Ra Ra Ra</div>
+			</div>
+			<div class="column">
+				<div class="has-text-centered button is-success is-fullwidth" onclick="playAudio('jaggaBlast')">Jagga Blast</div>
+			</div>
+			<div class="column">
+				<div class="has-text-centered button is-success is-fullwidth" onclick="playAudio('surmaSurma')">Surma Surma</div>
+			</div>
+			<div class="column">
+				<div class="has-text-centered button is-success is-fullwidth" onclick="playAudio('basantiBlast')">Basanti Blast</div>
+			</div>
+		</div>
+
+		<p class="title is 1"> By Song Variations</p>
+		<p class="subtitle is-3"> O nachdi meri jugni</p>
+		<div class="columns">
+			<div class="column">
+				<div class="has-text-centered button is-info is-fullwidth" onclick="playAudio('nachdiMeriLight')">Light</div>
+			</div>
+			<div class="column">
+				<div class="has-text-centered button is-info is-fullwidth" onclick="playAudio('nachdiMeriHeavy')">Heavy</div>
+			</div>
+		</div>
+	</div>
+	</section>
+</body>
+<script>
+	var song = document.getElementById("soundTest");
+	function playAudio(audioId){
+		song.pause();
+		song = document.getElementById(audioId);
+		song.load();
+		song.play();
+	}
+	function stopAll(){
+		song.pause();
+	}
+</script>
+</html>
