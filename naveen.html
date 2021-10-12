@@ -13,6 +13,10 @@
 		 	<source src="soundTest.mp3" type="audio/mpeg">
 		 	Your browser does not support the audio element.
 		</audio>
+		<audio id="novoiPirat">
+		 	<source src="novoiPirat.mp3" type="audio/mpeg">
+		 	Your browser does not support the audio element.
+		</audio>
 		<!-- General sounds -->
 		<audio id="morningWakeup">
 		 	<source src="morningWakeup.mp3" type="audio/mpeg">
@@ -124,6 +128,10 @@
 		 	<source src="basantiBlast.mp3" type="audio/mpeg">
 		 	Your browser does not support the audio element.
 		</audio>
+		<audio id="ariAriAri">
+		 	<source src="ariAriAri.mp3" type="audio/mpeg">
+		 	Your browser does not support the audio element.
+		</audio>
 
 		<!-- nachidi meri -->
 		<audio id="nachdiMeriLight">
@@ -134,9 +142,24 @@
 		 	<source src="nachdiMeriHeavy.mp3" type="audio/mpeg">
 		 	Your browser does not support the audio element.
 		</audio>
+
+		<!-- Tunak Tunak Tun -->
+		<audio id="tunakLightMetalAaria">
+		 	<source src="tunakLightMetalAaria.mp3" type="audio/mpeg">
+		 	Your browser does not support the audio element.
+		</audio>
+		<audio id="tunakHeavyMetalAaria">
+		 	<source src="tunakHeavyMetalAaria.mp3" type="audio/mpeg">
+		 	Your browser does not support the audio element.
+		</audio>
+		<audio id="tunakMetalChorus">
+		 	<source src="tunakMetalChorus.mp3" type="audio/mpeg">
+		 	Your browser does not support the audio element.
+		</audio>
 		<p class="title is-1">Technical</p>
 		<div class="button is-danger" onclick="stopAll()">Stop All</div>
 		<div class="button is-primary" onclick="playAudio('soundTest')">General soundtest</div>
+		<div class="button is-primary" onclick="playAudio('novoiPirat')">Novõi Pirat</div>
 
 		<p class="title is-1">General sounds</p>
 		<div class="columns">
@@ -166,6 +189,9 @@
 			</div>
 			<div class="column">
 				<div class="has-text-centered button is-warning is-fullwidth" onclick="playAudio('chalaakiAaria')">Chalaaki aaria</div>
+			</div>
+			<div class="column">
+				<div class="has-text-centered button is-warning is-fullwidth" onclick="playAudio('ariAriAri')">Ari Ari Ari</div>
 			</div>
 		</div>
 		<div class ="columns">
@@ -261,6 +287,18 @@
 			</div>
 			<div class="column">
 				<div class="has-text-centered button is-info is-fullwidth" onclick="playAudio('nachdiMeriHeavy')">Heavy</div>
+			</div>
+		</div>
+		<p class="subtitle is-3"> Tunak Tunak Tun</p>
+		<div class="columns">
+			<div class="column">
+				<div class="has-text-centered button is-info is-fullwidth" onclick="playAudio('tunakLightMetalAaria')">Light Metal Aaria</div>
+			</div>
+			<div class="column">
+				<div class="has-text-centered button is-info is-fullwidth" onclick="playAudio('tunakHeavyMetalAaria')">Heavy Metal Aaria</div>
+			</div>
+			<div class="column">
+				<div class="has-text-centered button is-info is-fullwidth" onclick="playAudio('tunakMetalChorus')">Metal Chorus</div>
 			</div>
 		</div>
 	</div>
